@@ -6,7 +6,7 @@ function About() {
     <div className="container">
       <Header title="Tentang Kami" />
       <p>
-        <strong>Perpuskuu</strong> adalah perpustakaan digital modern yang menyediakan berbagai koleksi buku inspiratif dan edukatif.
+        <strong>Perpuskuu</strong> l perpustakaan digital modern yang menyediakan berbagai koleksi buku inspiratif dan edukatif.
       </p>
     </div>
   );
