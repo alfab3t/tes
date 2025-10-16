@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #1abc9c;
+  --text-color: #333;
+  --bg-color: #f7f9fb;
+  --danger-color: #e74c3c;
+  --warning-color: #f39c12;
+  --success-color: #27ae60;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10%;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* ===== FORM (ADD & BORROW PAGE) ===== */
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  margin: 0 auto 40px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.form-card h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 6px rgba(26, 188, 156, 0.3);
+}
+
+/* ==== TAMBAH BUKU BARU ==== */
+.addbook-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 40px 60px;
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.addbook-container h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.addbook-container p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.addbook-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.addbook-form label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.addbook-form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.addbook-form input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+  outline: none;
+}
+
+.addbook-form .btn {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.addbook-form .btn:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* ==== DAFTAR BUKU DIPINJAM (BORROWED PAGE) ==== */
+.borrowed-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  margin: 40px auto;
+  animation: fadeInUp 0.8s ease;
+}
+
+.borrowed-container h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: var(--primary-color);
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ===== STATUS BADGES ===== */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badge-returned {
+  background: var(--success-color);
+}
+
+.badge-pending {
+  background: var(--warning-color);
+}
+
+.badge-overdue {
+  background: var(--danger-color);
+}
+
+/* ==== ANIMASI ==== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .addbook-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .addbook-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .addbook-form input {
+    width: 100%;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .borrowed-container {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* ==== FORM TAMBAH BUKU ==== */
+.form-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form-container input {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+.form-container button,
+.form-container .btn {
+  align-self: flex-start;
+  margin-top: 10px;
+}
