@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="container">
       <Header title="Selamat Datang di Perpuskuu 📚" subtitle="Temukan buku favoritmu di sini!" />
-      <p>Perpustakaan digital untuk semua kalangan pembaca.</p>
+      <p> digital untuk semua kalangan pembaca.</p>
     </div>
   );
 }
